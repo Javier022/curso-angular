@@ -1,0 +1,11 @@
+<p>Today: {{ today | date : "short" }}</p>
+<p>Today: {{ today | timeAgo }}</p>
+<p>Another Date: {{ date | date : "yyyy.dd.MM" }}</p>
+<p>{{ "hOLA Bsfs AJjjA" | uppercase }}</p>
+<div class="products--grid">
+  <app-product
+    [product]="product"
+    *ngFor="let product of products"
+    (addProduct)="productAdded($event)"
+  ></app-product>
+</div>

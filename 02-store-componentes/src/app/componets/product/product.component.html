@@ -1,0 +1,5 @@
+<app-img [img]="product.image"></app-img>
+<h2>{{ product.price | currency : "GTQ" }}</h2>
+<p>{{ product.title | reverse }}</p>
+<p appHighlight>{{ product.description }}</p>
+<button (click)="addToCart()">Add to Card</button>
