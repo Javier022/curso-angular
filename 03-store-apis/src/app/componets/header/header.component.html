@@ -1,0 +1,46 @@
+<div class="show-mobile">
+  <div>
+    <button (click)="toogleMenu()">
+      <img src="./assets/svg/menu-burger.svg" />
+    </button>
+    <a href="">
+      <img src="./assets/svg/sale.svg" />
+    </a>
+    <a href="">
+      <img src="./assets/svg/shopping.svg" />
+    </a>
+  </div>
+
+  <div class="side-menu" [class.active]="activeMenu">
+    <button (click)="toogleMenu()">Close</button>
+    <ul>
+      <li><a href="">All</a></li>
+      <li><a href="">Clothes</a></li>
+      <li><a href="">Electronics</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="hide-mobile">
+  <div>
+    <nav>
+      <a class="logog" href="">
+        <img src="./assets/svg/sale.svg" />
+      </a>
+      <ul>
+        <li><a href="">All</a></li>
+        <li><a href="">Clothes</a></li>
+        <li><a href="">Electronics</a></li>
+      </ul>
+    </nav>
+    <div class="info">
+      <div class="account">test@gmail.com</div>
+      <div class="cart">
+        <a href="">
+          <img src="./assets/svg/shopping.svg" />
+        </a>
+        <span class="counter">{{ cantProducts }}</span>
+      </div>
+    </div>
+  </div>
+</div>
